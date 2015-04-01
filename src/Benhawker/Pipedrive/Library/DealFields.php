@@ -32,6 +32,16 @@ class DealFields
         //associate curl class
         $this->curl = $master->curl();
     }
+    
+    /**
+     * Returns all deal fields
+     *
+     * @return array returns all dealFields
+     */
+    public function getAll()
+    {
+        return $this->curl->get('dealFields');
+    }
 
     /**
      * Adds a dealField
